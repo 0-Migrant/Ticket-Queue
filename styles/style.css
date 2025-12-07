@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 150px;
+    box-shadow: 0px 0px 10px #00000033;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ticketQueue {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ticketQueue_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add_customer_container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
+}
+
+.add_customer_container * {
+    padding: 5px;
+}
+
+.add_customer_container button {
+    cursor: pointer;
+    background-color: rgba(91, 91, 255, 0.997);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.add_customer button:active {
+    background-color: rgba(91, 91, 255, 0.5);
+}
+
+#current_customer {
+    background-color: rgba(0, 200, 20, 0.319);
+    padding: 5px;
+    border-radius: 5px;
+    border-left: 4px solid rgb(0, 200, 20);
+}
+
+#current_customer span {
+    font-weight: bold;
+}
+
+#next_customer {
+    cursor: pointer;
+    background-color: rgba(91, 91, 255, 0.997);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#next_customer:active {
+    background-color: rgba(91, 91, 255, 0.5);
+}
+
+.customer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customer {
+    background-color: rgba(91, 91, 255, 0.09);
+    padding: 5px;
+    border-radius: 5px;
+    border-left: 4px solid rgba(91, 91, 255, 0.997);
+}
